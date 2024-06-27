@@ -1,20 +1,33 @@
-
-
 import React from "react";
-
+import Weather from "./weather.js";
 import "./App.css";
 
 export default function App() {
   return (
     <div className="App">
       <div className="container">
-      <h1>Weather app</h1>
-      <weather defaultcity = "New York"/>
-    <footer>
-      This project was coded by guguqueen and is {" "}
-    <a href="https://github.com/guguqueen/react-weather-app"  > open-sourced on Github </a>
-    </footer>
-    </div>
+        <Weather defaultCity="New York" />
+
+        <footer>
+          
+          This project was coded by{" "}
+          <a
+            href="https://www.guguqueen.io/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            guguqueen
+          </a>{" "}
+          and is{" "}
+          <a href="https://github.com/guguqueen/react-weather-app"  > open-sourced on Github </a>
+            {" "}
+            and{" "}
+          <a href="https://creative-nougat-678ad2.netlify.app/">
+            hosted on Netlify
+          </a>
+        </footer>
+      </div>
     </div>
   );
 }
+

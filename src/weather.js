@@ -64,7 +64,7 @@ if (weatherData.ready){
     let apiURL = `https://api.openweathermap.org/data/2.5/weather?lat=${props.defaultcity}&appid={API key}&units=metric`;
     axios.get(apiURL).then(handleResponse);
        
-    return(Loading...)
+    return("Loading...");
 
 }
 
