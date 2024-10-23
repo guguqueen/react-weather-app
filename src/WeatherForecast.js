@@ -17,12 +17,19 @@ import WeatherForecastDay from "./WeatherForecastday";
         return (
             <div className="WeatherForecast">
               <div className="row">
-                <div className="col">
-                    <WeatherForecastDay data={forecast[0]}/>
-                </div>
-              </div>
-            </div>
-          );
+                {foreccast.map(function(dailyforecast, index){
+                    if (index > 6){
+                        return (
+                            <div className="col" key ={index}>
+                            <WeatherForecastDay data = {forecast[0]} />
+                            </div>
+                            
+                          ); 
+                    }
+                 })}   
+                    </div></div>
+                );
+            
         }
          else {
             let apiKey = "0f8bc384a7c31b717a18cfe38a95ae06";
