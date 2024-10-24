@@ -19,25 +19,7 @@ import { cleanup } from "@testing-library/react";
             setloaded(true);
         }
         
-        If (loaded) {
-        return (
-            <div className="WeatherForecast">
-              <div className="row">
-                {foreccast.map(function(dailyforecast, index){
-                    if (index > 6){
-                        return (
-                            <div className="col" key ={index}>
-                            <WeatherForecastDay data = {forecast[0]} />
-                            </div>
-                            
-                          ); 
-                    }
-                 })}   
-                    </div></div>
-                );
-            
-        }
-         else {
+        function load (){
             let apiKey = "0f8bc384a7c31b717a18cfe38a95ae06";
         let longitude = props.coordinates.lon;
         let latitude = props.coordinates.lat;
@@ -47,5 +29,31 @@ import { cleanup } from "@testing-library/react";
         return null;
             }
 
+
+
+
+        If (loaded) {
+        return (
+            <div className="WeatherForecast">
+              <div className="row">
+                {foreccast.map(function(dailyforecast, index){
+                    if (index > 5){
+                        return (
+                            <div className="col" key ={index}>
+                            <WeatherForecastDay data = {forecast[0]} />
+                            </div>
+                            
+                          ); 
+                    } else{
+                        return null;
+                    }
+
+                 })}   
+                    </div></div>
+           );
+        } else {
+          load();
+      
+          return null;
         }
-    
+      }

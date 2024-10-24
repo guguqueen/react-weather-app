@@ -12,17 +12,15 @@ export default function App() {
           
           This project was coded by{" "}
           <a
-            href="https://www.guguqueen.io/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+            href="https://www.guguqueen.io/" target="_blank" rel="noopener noreferrer">
             guguqueen
           </a>{" "}
           and is{" "}
-          <a href="https://github.com/guguqueen/react-weather-app"  > open-sourced on Github </a>
+          <a href="https://github.com/guguqueen/react-weather-app" target="_blank" rel="noopener noreferrer">
+           open-sourced on Github </a>
             {" "}
             and{" "}
-          <a href="https://creative-nougat-678ad2.netlify.app/">
+          <a href="https://creative-nougat-678ad2.netlify.app/"target="_blank" rel="noopener noreferrer">
             hosted on Netlify
           </a>
         </footer>
